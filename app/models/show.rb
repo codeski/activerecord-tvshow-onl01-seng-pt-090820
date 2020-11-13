@@ -1,6 +1,7 @@
 class Show < ActiveRecord::Base
   
-  task :highest_rating
+  def :highest_rating
     self.maximum(:rating)
   end
+  
 end 
